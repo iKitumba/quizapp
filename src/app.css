@@ -1,0 +1,152 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  background: #020230;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 70%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url('./assets/bg.jpg') center;
+  display: flex;
+  flex-direction: column;  
+}
+
+.top {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.timer {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  border: 5px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  color: #ffffff;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.money {
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.moneyList {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.moneyItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.moneyItem.active {
+  background-color: teal;
+  border-radius: .5rem;
+}
+
+.moneyNumber {
+  font-size: 1rem;
+  color: #888888;
+  width: 25%;
+  align-self: flex-start;
+  font-weight: normal;
+}
+
+.moneyAmount {
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 70%;
+  font-weight: bold;
+}
+
+.endText {
+  color: #ffffff;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.start {
+  width: 350px;
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: .5rem;
+  gap: 1rem;
+}
+
+.startInput {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.startInput:focus {
+  outline: none;
+}
+
+.startButton {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+
+.restart {
+  width: 350px;
+  max-width: 80%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.137);
+}
