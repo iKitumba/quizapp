@@ -10,7 +10,6 @@
   width: 96%;
   margin: 0 auto;
   padding: 1rem;
-  /* border-radius: 0.5rem; */
   background-image: linear-gradient(#100241, black);
   text-align: center;
   font-size: 1.2rem;
@@ -30,7 +29,6 @@
 
 .answer {
   padding: 1rem;
-  /* border-radius: 0.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
