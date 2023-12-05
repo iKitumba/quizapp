@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 const Timer = ({ setStop, questionNumber }) => {
   const [timer, setTimer] = useState(30);
@@ -8,8 +8,8 @@ const Timer = ({ setStop, questionNumber }) => {
       return setStop(true);
     }
     const interval = setInterval(() => {
-      setTimer(prev => prev - 1);
-    }, 1000);
+      setTimer((prev) => prev - 1);
+    }, 1000000);
 
     return () => clearInterval(interval);
   }, [setStop, timer]);
@@ -19,6 +19,6 @@ const Timer = ({ setStop, questionNumber }) => {
   }, [questionNumber]);
 
   return timer;
-}
+};
 
-export default Timer
+export default Timer;
