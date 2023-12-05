@@ -20,8 +20,6 @@ const App = () => {
     setMenuOpened((prev) => !prev);
   };
 
-  console.log(matchMedia);
-
   const moneyPyradim = React.useMemo(() => moneyList, []);
 
   React.useEffect(() => {
