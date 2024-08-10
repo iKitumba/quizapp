@@ -1,0 +1,17 @@
+export const moneyList = [
+  { id: 1, amount: 'KZ 1000' },
+  { id: 2, amount: 'KZ 2000' },
+  { id: 3, amount: 'KZ 4000' },
+  { id: 4, amount: 'KZ 10000' },
+  { id: 5, amount: 'KZ 15000' },
+  { id: 6, amount: 'KZ 20000' },
+  { id: 7, amount: 'KZ 25000' },
+  { id: 8, amount: 'KZ 50000' },
+  { id: 9, amount: 'KZ 75000' },
+  { id: 10, amount: 'KZ 100000' },
+  { id: 11, amount: 'KZ 200000' },
+  { id: 12, amount: 'KZ 450000' },
+  { id: 13, amount: 'KZ 700000' },
+  { id: 14, amount: 'KZ 850000' },
+  { id: 15, amount: 'KZ 1000000' },
+].reverse();
