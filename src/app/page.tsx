@@ -5,7 +5,7 @@ import { Start } from "@/components/start";
 import { Timer } from "@/components/timer";
 import { useMedia } from "@/hooks/use-media";
 import { questions } from "@/utils/data";
-import { moneyList } from "@/utils/modeyList";
+import { moneyList } from "@/utils/money-list";
 import { Coins } from "@phosphor-icons/react";
 import React from "react";
 
