@@ -6,7 +6,7 @@ type TimerProps = {
   questionNumber: number;
 };
 
-const Timer = ({ setStop, questionNumber }: TimerProps) => {
+export const Timer = ({ setStop, questionNumber }: TimerProps) => {
   const [timer, setTimer] = useState(30);
 
   useEffect(() => {
@@ -26,5 +26,3 @@ const Timer = ({ setStop, questionNumber }: TimerProps) => {
 
   return timer;
 };
-
-export default Timer;

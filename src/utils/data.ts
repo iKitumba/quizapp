@@ -1,4 +1,15 @@
-export const questions = [
+export type Answer = {
+  text: string;
+  correct: boolean;
+};
+
+export type Question = {
+  id: number;
+  question: string;
+  answers: Answer[];
+};
+
+export const questions: Question[] = [
   // Perguntas para KZ 1000
   {
     id: 1,

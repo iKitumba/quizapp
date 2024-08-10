@@ -1,8 +1,8 @@
 "use client";
 import "@/app/app.css";
-import QuizItem from "@/components/QuizItem";
-import Start from "@/components/Start";
-import Timer from "@/components/Timer";
+import { QuizItem } from "@/components/quiz-item";
+import { Start } from "@/components/start";
+import { Timer } from "@/components/timer";
 import { useMedia } from "@/hooks/useMedia";
 import { questions } from "@/utils/data";
 import { moneyList } from "@/utils/modeyList";

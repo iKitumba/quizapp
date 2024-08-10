@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 
-const Start = ({ setUserName }) => {
+export const Start = ({ setUserName }) => {
   const inputRef = useRef();
 
   const handleClick = () => {
@@ -22,5 +22,3 @@ const Start = ({ setUserName }) => {
     </div>
   );
 };
-
-export default Start;
