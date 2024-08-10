@@ -1,11 +1,17 @@
 "use client";
 import { useRef } from "react";
 
-export const Start = ({ setUserName }) => {
-  const inputRef = useRef();
+type StartProps = {
+  setUserName: React.Dispatch<React.SetStateAction<string | null>>;
+};
+
+export const Start = ({ setUserName }: StartProps) => {
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   const handleClick = () => {
-    inputRef.current.value && setUserName(inputRef.current.value);
+    if (inputRef.current?.value) {
+      setUserName(inputRef.current.value);
+    }
   };
 
   return (

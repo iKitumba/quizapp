@@ -11,7 +11,7 @@ import React from "react";
 
 const App = () => {
   const matchMedia = useMedia("(max-width: 856px)");
-  const [userName, setUserName] = React.useState(null);
+  const [userName, setUserName] = React.useState<string | null>(null);
   const [questionNumber, setQuestionNumber] = React.useState(1);
   const [stop, setStop] = React.useState(false);
   const [earned, setEarned] = React.useState("KZ 0");
