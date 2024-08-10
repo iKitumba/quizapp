@@ -1,6 +1,6 @@
 import React from "react";
 
-import "@/app/index.css";
+import "./index.css";
 
 export default function RootLayout({
   children,

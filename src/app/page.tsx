@@ -1,5 +1,4 @@
 "use client";
-import "@/app/app.css";
 import { QuizItem } from "@/components/quiz-item";
 import { Start } from "@/components/start";
 import { Timer } from "@/components/timer";
@@ -8,6 +7,7 @@ import { questions } from "@/utils/data";
 import { moneyList } from "@/utils/money-list";
 import { Coins } from "@phosphor-icons/react";
 import React from "react";
+import "./app.css";
 
 const App = () => {
   const matchMedia = useMedia("(max-width: 856px)");
