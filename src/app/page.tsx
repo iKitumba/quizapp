@@ -21,14 +21,14 @@ const App = () => {
     setMenuOpened((prev) => !prev);
   };
 
-  const moneyPyradim = React.useMemo(() => moneyList, []);
+  const moneyPyramid = React.useMemo(() => moneyList, []);
 
   React.useEffect(() => {
-    const earnedMoney = moneyPyradim.find((m) => m.id === questionNumber - 1);
+    const earnedMoney = moneyPyramid.find((m) => m.id === questionNumber - 1);
     if (questionNumber > 1 && earnedMoney) {
       setEarned(earnedMoney.amount);
     }
-  }, [moneyPyradim, questionNumber]);
+  }, [moneyPyramid, questionNumber]);
 
   return (
     <div className="app animeLeft">
@@ -80,7 +80,7 @@ const App = () => {
             style={{ zIndex: menuOpened ? 1000 : -1000 }}
           >
             <ul className="moneyList">
-              {moneyPyradim.map((m) => (
+              {moneyPyramid.map((m) => (
                 <li
                   key={m.id}
                   className={
