@@ -6,8 +6,10 @@ type TimerProps = {
   questionNumber: number;
 };
 
+const MAX_SECONDS_AMOUNT = 30;
+
 export const Timer = ({ setStop, questionNumber }: TimerProps) => {
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(MAX_SECONDS_AMOUNT);
 
   useEffect(() => {
     if (timer === 0) {
@@ -21,7 +23,7 @@ export const Timer = ({ setStop, questionNumber }: TimerProps) => {
   }, [setStop, timer]);
 
   useEffect(() => {
-    setTimer(30);
+    setTimer(MAX_SECONDS_AMOUNT);
   }, [questionNumber]);
 
   return timer;
