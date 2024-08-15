@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import * as React from "react";
 
 type TimerProps = {
   setStop: React.Dispatch<React.SetStateAction<boolean>>;
@@ -9,9 +9,9 @@ type TimerProps = {
 const MAX_SECONDS_AMOUNT = 30;
 
 export const Timer = ({ setStop, questionNumber }: TimerProps) => {
-  const [timer, setTimer] = useState(MAX_SECONDS_AMOUNT);
+  const [timer, setTimer] = React.useState(MAX_SECONDS_AMOUNT);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (timer === 0) {
       return setStop(true);
     }
@@ -22,7 +22,7 @@ export const Timer = ({ setStop, questionNumber }: TimerProps) => {
     return () => clearInterval(interval);
   }, [setStop, timer]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTimer(MAX_SECONDS_AMOUNT);
   }, [questionNumber]);
 

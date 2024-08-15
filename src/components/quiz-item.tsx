@@ -1,6 +1,6 @@
 "use client";
 import { Answer, Question } from "@/utils/data";
-import { useEffect, useState } from "react";
+import React from "react";
 import "./quizitem.css";
 
 type QuizItemProps = {
@@ -16,9 +16,11 @@ export const QuizItem = ({
   questionNumber,
   setStop,
 }: QuizItemProps) => {
-  const [className, setClassName] = useState("answer");
-  const [question, setQuestion] = useState<Question | null>(null);
-  const [selectedAnswer, setSelectedAnswer] = useState<Answer | null>(null);
+  const [className, setClassName] = React.useState("answer");
+  const [question, setQuestion] = React.useState<Question | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = React.useState<Answer | null>(
+    null
+  );
 
   const delay = (duration: number, callback: () => void) => {
     setTimeout(() => {
@@ -26,7 +28,7 @@ export const QuizItem = ({
     }, duration);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
 
